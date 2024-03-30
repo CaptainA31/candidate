@@ -1,0 +1,341 @@
+body {
+    background-color: #212121;
+}
+
+
+
+.input-group {
+    position: relative;
+  }
+
+  .input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1rem;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    width: 70%;
+  }
+  
+  .user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+  }
+  
+  .input:focus, .input:valid {
+    outline: none;
+    border: 1.5px solid #1a73e8;
+  }
+  
+  .input:focus ~ .user-label, .input:valid ~ .user-label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #212121;
+    padding: 0 .2em;
+    color: #2196f3;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .inputt {
+    -webkit-appearance: none;
+   /* remove default */
+    /* display: block; */
+    margin: 10px;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    cursor: pointer;
+    vertical-align: middle;
+    box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+    background-color: hsla(0,0%,0%,.2);
+    background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+    background-repeat: no-repeat;
+    -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+      -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+    outline: none;
+  }
+  
+  .inputt:checked {
+    -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+      -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+  }
+  
+  .inputt:active {
+    -webkit-transform: scale(1.5);
+    -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+  }
+
+  .radio-buttons-container label {
+    color: white; /* Change the color as needed */
+    margin-right: 10px; /* Adjust spacing between the radio button and text */
+  }
+  
+  
+  .inputt,
+  .inputt:active {
+    background-position: 0 24px;
+  }
+  
+  .inputt:checked {
+    background-position: 0 0;
+  }
+  
+  .input:checked ~ .inputt,
+  .inputt:checked ~ .inputt:active {
+    background-position: 0 -24px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .personal-information {
+    background-color: #212121; /* Light blue background color */
+    border-radius: 100px 0px 0px 0px;
+  }
+  
+  .contact-information {
+    background-color: #0D261E; /* Light green background color */
+    border-radius: 0px;
+  }
+
+  .identification-information {
+    background-color: #113429; /* Light green background color */
+    border-radius: 0px 100px 0px 0px;
+  }
+
+  .campaign-information {
+    background-color: #1E4C3C; /* Light green background color */
+    border-radius:  0px 0px 0px 100px;
+  }
+
+  .biographical-information {
+    background-color: #30735B; /* Light green background color */
+    border-radius: 0px;
+  }
+
+  .nomination-papers {
+    background-color: #113429; /* Light green background color */
+    border-radius: 0px;
+  }
+
+  .security-information {
+    background-color: #439B7A; /* Light green background color */
+    border-radius: 0px;
+  }
+
+  .additional-information {
+    background-color: #212121; /* Light green background color */
+    border-radius: 0px 0px 100px 0px;
+  }
+
+
+  .postal-address {
+    background-color: #4C1743; /* Light green background color */
+    border-radius: 0px;
+  }
+  .phone-numbers {
+    background-color: #612060; /* Light green background color */
+    border-radius: 0px 100px 0px 0px;
+  }
+  .email {
+    background-color: #692f68; /* Light green background color */
+    border-radius:  0px 0px 0px 100px;
+  }
+  .property-details {
+    background-color: #814180; /* Light green background color */
+    border-radius: 0px;
+  }
+  .office {
+    background-color: #212121; /* Light green background color */
+    border-radius: 0px 0px 100px 0px;
+  }
+  
+  
+
+.registration-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px; /* Adjust the margin as needed */
+  /* height: 100vh; Adjust as needed */
+  margin-bottom: 0;
+}
+.registration-container-s2 {
+    margin-top: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 50px;  */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  }
+
+.registration-section {
+  /* background-color: #212121; Light gray background color */
+  /* border-radius: 100px 0px 0px 100px; */
+  padding: 30px;
+  /* margin-bottom: 20px; */
+  width: 30%; 
+  height: 300px;
+  min-height: 60vh;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.registration-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: white; /* Dark text color */
+}
+
+.registration-section .form-group {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.registration-section label {
+  /* font-weight: bold; */
+  color: white;
+}
+
+.registration-section input[type="text"],
+.registration-section input[type="date"],
+.registration-section input[type="email"],
+.registration-section input[type="tel"] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.registration-section input[type="text"]:focus,
+.registration-section input[type="date"]:focus,
+.registration-section input[type="email"]:focus,
+.registration-section input[type="tel"]:focus,
+.registration-section input[type="url"]:focus{
+  outline: none;
+  border-color: #007bff; /* Blue border when focused */
+}
+
+.registration-header h1{
+    text-align: center;
+    margin-bottom: -20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Cbutton {
+    border: none;
+    outline: none;
+    background-color: #4C1743;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #823876;
+  }
+  
+  .Cbutton:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #823876;
+  }
+
+  .button {
+    border: none;
+    outline: none;
+    background-color: #113429;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #177255;
+  }
+  
+  .button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #177255;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: -20px;
+  }
+
+  .container p{
+    color: white;
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Adjust margin as needed */
+  }
